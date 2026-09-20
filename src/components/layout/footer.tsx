@@ -44,7 +44,7 @@ export function Footer() {
           </div>
           <div className="flex gap-4">
             <Link
-              href="https://github.com/byigitt"
+              href="https://github.com/Riteshpatil077"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl bg-background p-2 hover:bg-accent"
@@ -53,7 +53,7 @@ export function Footer() {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://linkedin.com/in/bbayburtlu"
+              href="https://linkedin.com/in/ritesh-patil-4197b9297"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-2xl bg-background p-2 hover:bg-accent"
@@ -62,7 +62,7 @@ export function Footer() {
               <span className="sr-only">LinkedIn</span>
             </Link>
             <Link
-              href="mailto:bbayburtlu@hotmail.com"
+              href="mailto:patilritesh7172@gmail.com"
               className="rounded-2xl bg-background p-2 hover:bg-accent"
             >
               <Mail className="h-5 w-5" />
@@ -72,10 +72,11 @@ export function Footer() {
         </div>
         <div className="flex justify-center mt-2">
           <p className="text-sm text-muted-foreground">
-            © {currentYear} Barış Bayburtlu. All rights reserved.
+            © {currentYear} Ritesh Ramesh Patil. All rights reserved.
           </p>
         </div>
       </div>
     </footer>
   );
-} 
+}
+ 

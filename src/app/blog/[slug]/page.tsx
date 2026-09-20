@@ -64,13 +64,13 @@ export default async function BlogPostPage({ params }: { params: Params }) {
     dateModified: post.date,
     author: {
       '@type': 'Person',
-      name: post.authors?.[0] || 'Barış Bayburtlu',
-      url: 'https://portfolio.bayburt.lu/about',
+      name: post.authors?.[0] || 'Ritesh Ramesh Patil',
+      url: 'https://riteshpatil.dev/about',
     },
     publisher: {
       '@type': 'Person',
-      name: 'Barış Bayburtlu',
-      url: 'https://portfolio.bayburt.lu',
+      name: 'Ritesh Ramesh Patil',
+      url: 'https://riteshpatil.dev',
     },
   }
 

@@ -2,99 +2,75 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Heart, Coffee, Rocket, ExternalLink, Github, Link as LinkIcon } from "lucide-react";
-import Image from "next/image";
+import { Heart, Rocket, ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 
 const aboutSections = [
   {
     title: "Hello World!",
     icon: <Heart className="h-5 w-5 text-primary" />,
-    content: "I'm Barış, a 21 years old junior software engineering student who turned a passion for gaming servers into a love for web development. When I'm not coding, you'll find me exploring new tech, contributing to open-source, or probably debugging with an energy drink in hand.",
+    content: "I'm Ritesh Ramesh Patil, a Full-Stack Developer focused on building practical and scalable web applications. I work across both frontend and backend development, and I enjoy solving real business problems — from secure real-time communication and ERP systems to analytics dashboards, financial applications, e-commerce platforms, and business management systems.",
   },
   {
     title: "What I Do",
     icon: <Rocket className="h-5 w-5 text-primary" />,
-    content: "I build modern web applications with a focus on user experience and performance. I love turning complex problems into simple, beautiful, and intuitive solutions.",
+    content: "I build applications using React, Next.js, Node.js, Express.js, Python, Django, Flask, PostgreSQL, and MySQL. During my internship at Ishwarya BI Technologies, I worked on an ERP system for a book-publishing business, a crusher-management system, REST APIs, database operations, deployment, optimization, and AI chatbot integration.",
   },
 ];
 
 const portfolioProjects = [
   {
-    title: "Personal Portfolio",
-    description: "My personal portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.",
-    image: "https://bayburt.lu/portfolio/portfolio.png",
-    liveUrl: "https://portfolio.bayburt.lu",
-    githubUrl: "https://github.com/byigitt/portfolio",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI"],
+    title: "SecureChatApp",
+    description: "Secure real-time encrypted messaging platform with AES-256-GCM, ECDSA, RSA-OAEP, TOTP, Socket.IO, Groq AI, and PWA support.",
+    githubUrl: "https://github.com/Riteshpatil077/SecureChatApp",
+    liveUrl: "https://securechatapp.vercel.app",
+    tags: ["React", "Node.js", "Socket.IO", "MySQL", "Web Crypto API", "Groq AI"],
   },
   {
-    title: "Soulana",
-    description: "Soulana is a web application that allows users to donate secure, fast and transparently using blockchain technology. Ostim Solana Hackathon, 1st place.",
-    image: "https://bayburt.lu/portfolio/soulana.png",
-    liveUrl: "https://cyberia-frontend.vercel.app",
-    githubUrl: "https://github.com/wearesoulana/soulana-frontend",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI"],
+    title: "Pressly",
+    description: "Full-stack digital magazine subscription e-commerce platform with PDF flipbook, JWT auth, OTP recovery, admin dashboard, and subscription management.",
+    githubUrl: "https://github.com/Riteshpatil077/Pressly",
+    tags: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS"],
   },
   {
-    title: "imatil",
-    description: "imatil is a modern, browser-based file conversion tool built with Next.js 15 that enables users to convert media files directly in their browser using WebAssembly technology.",
-    image: "https://bayburt.lu/portfolio/imatil.png",
-    liveUrl: "https://i.bayburt.lu",
-    githubUrl: "https://github.com/byigitt/imatil",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "WebAssembly", "Shadcn/UI", "FFMPEG"]
+    title: "Advanced Analytics & Enterprise Admin Dashboard",
+    description: "Enterprise ERP & analytics dashboard with sales analytics, invoicing, GST handling, subscription lifecycle, logistics, and 40+ table PostgreSQL architecture.",
+    githubUrl: "https://github.com/Riteshpatil077/admin-dashboard",
+    liveUrl: "https://admin-dashboard.vercel.app",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Chart.js"],
   },
   {
-    title: "cankaya.chat",
-    description: "cankaya.chat is a modern, browser-based chat application built with Next.js 15 that enables users to chat with each other anonymously using WebSocket technology.",
-    image: "https://bayburt.lu/portfolio/cankayachat.png",
-    liveUrl: "https://cankaya.chat",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "WebSocket", "PWA"]
+    title: "Expense Tracker",
+    description: "Full-stack financial management platform with expense/income tracking, PDF/Excel reports, email delivery, Celery + Redis background tasks, and Docker deployment.",
+    githubUrl: "https://github.com/Riteshpatil077/expense-tracker",
+    tags: ["React", "Vite", "Django", "PostgreSQL", "Celery", "Redis", "Docker"],
   },
   {
-    title: "smartmove",
-    description: "smartmove is an AI-powered passenger analysis system for the Ankara Metro network that combines real-time passenger counting using YOLOv8 object detection and predictive analytics to forecast crowd density. Ostim AI Competition, 2nd place.",
-    image: "https://bayburt.lu/portfolio/smartmove.png",
-    githubUrl: "https://github.com/byigitt/smartmove",
-    tags: ["Python", "Numpy", "Pandas", "Scikit-learn", "Seaborn", "YOLOv8", "Shadcn/UI"]
+    title: "श्री कृष्णा ज्वेलर्स",
+    description: "Bilingual (Marathi + English) jewellery shop management system with inventory, sales, gold exchange calculations, loan management, EMI tracking, and profit analysis.",
+    githubUrl: "https://github.com/Riteshpatil077/jewellery-shop",
+    liveUrl: "https://jewellery-shop.vercel.app",
+    tags: ["React", "Node.js", "Express.js", "PostgreSQL", "Prisma"],
   },
   {
-    title: "Flashy",
-    description: "Flashy is a modern, intuitive flashcard application built with Next.js 15 that helps users study effectively through digital flashcards. Features include group organization, study mode with shuffle functionality, and smooth animations.",
-    image: "https://bayburt.lu/portfolio/flashy.png", 
-    liveUrl: "https://flashy-byigitt.vercel.app/",
-    githubUrl: "https://github.com/byigitt/flashy",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI"]
+    title: "Atmosphere",
+    description: "Live weather forecast dashboard with global search, geolocation, 24-hour & 5-day forecasts, atmospheric metrics, and dynamic glassmorphism UI.",
+    githubUrl: "https://github.com/Riteshpatil077/atmosphere",
+    tags: ["HTML5", "CSS3", "JavaScript", "Open-Meteo API", "OpenWeatherMap"],
   },
   {
-    title: "Suncore",
-    description: "Suncore is an innovative open-source audio transformation platform inspired by nightcore.studio, designed to help users create nightcore versions of their favorite music. Features include real-time playback speed adjustment, reverb control, bass boost, and SoundCloud API integration.",
-    image: "https://bayburt.lu/portfolio/suncore.png",
-    liveUrl: "https://suncore.vercel.app",
-    githubUrl: "https://github.com/byigitt/suncore",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Shadcn/UI", "Tone.js"]
+    title: "URL Shortener & Analytics Microservice",
+    description: "Production-grade URL shortening service with analytics, IP tracking, click count, RESTful APIs, Flask Application Factory, and Gunicorn server.",
+    githubUrl: "https://github.com/Riteshpatil077/url-shortener",
+    liveUrl: "https://url-shortener.vercel.app",
+    tags: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "Gunicorn"],
   },
   {
-    title: "Tourist AI Planner",
-    description: "Tourist AI Planner is a web application that helps users plan their trips by providing personalized recommendations for destinations, activities, and accommodations. Did my internship here. ",
-    image: "https://bayburt.lu/portfolio/tourist.png",
-    liveUrl: "https://touristapplication.com",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    title: "Banco ERP Solution",
+    description: "Enterprise ERP web application managing sales, subscriptions, inventory, accounting, printable invoices/ledgers, PDF generation, Excel export, and automated DB backups.",
+    githubUrl: "https://github.com/Riteshpatil077/banco-erp",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "JWT", "Chart.js"],
   },
-  {
-    title: "StarSalesInv",
-    description: "Star Sales & Investment is committed to delivering high-quality products at competitive prices to businesses of all sizes.",
-    image: "https://bayburt.lu/portfolio/starsales.png",
-    liveUrl: "https://starsalesinv.com",
-    tags: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    title: "Wholesale Template",
-    description: "Wholesale Template is a website template for wholesale businesses.",
-    image: "https://bayburt.lu/portfolio/template.png",
-    liveUrl: "https://bayburt.lu/template1",
-    tags: ["HTML", "CSS", "JavaScript"],
-  }
 ];
 
 const container = {
@@ -123,7 +99,7 @@ export default function AboutPage() {
           About Me
         </h1>
         <p className="mt-4 text-muted-foreground max-w-[700px]">
-          Caffeine-fueled coder turning ideas into reality
+          Full-Stack Developer building practical, real-world applications
         </p>
       </motion.div>
 
@@ -160,35 +136,17 @@ export default function AboutPage() {
         <h2 className="text-3xl font-bold tracking-tighter text-center mb-8">
           Portfolio
         </h2>
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {portfolioProjects.map((project) => (
             <motion.div
               key={project.title}
               variants={item}
               className="group relative"
             >
-              <Card className="h-full overflow-hidden hover:shadow-lg transition-all">
-                <Link 
-                  href={project.liveUrl || project.githubUrl || ""} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative block aspect-video group cursor-pointer overflow-hidden"
-                >
-                  <div className="relative w-full h-full transform transition-transform duration-300 group-hover:scale-105">
-                    <Image
-                      src={project.image}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-all duration-300 group-hover:blur-sm"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black/20">
-                      <LinkIcon className="w-8 h-8 text-white" />
-                    </div>
-                  </div>
-                </Link>
+              <Card className="h-full hover:shadow-lg transition-all">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-                  <p className="text-muted-foreground mb-4">{project.description}</p>
+                  <p className="text-muted-foreground mb-4 text-sm">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag) => (
                       <span
@@ -200,17 +158,6 @@ export default function AboutPage() {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    {project.liveUrl && (
-                      <Link
-                        href={project.liveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
-                      >
-                        <ExternalLink className="h-4 w-4" />
-                        Live Demo
-                      </Link>
-                    )}
                     {project.githubUrl && (
                       <Link
                         href={project.githubUrl}
@@ -222,6 +169,17 @@ export default function AboutPage() {
                         Source Code
                       </Link>
                     )}
+                    {project.liveUrl && (
+                      <Link
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        <ExternalLink className="h-4 w-4" />
+                        Live Demo
+                      </Link>
+                    )}
                   </div>
                 </CardContent>
               </Card>
@@ -229,18 +187,6 @@ export default function AboutPage() {
           ))}
         </div>
       </motion.div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="mt-12 text-center"
-      >
-        <div className="flex items-center justify-center gap-2 text-muted-foreground">
-          <Coffee className="h-5 w-5" />
-          <p>Powered by Monster Energy and curiosity</p>
-        </div>
-      </motion.div>
     </div>
   );
-} 
+}

@@ -22,6 +22,7 @@ A modern, responsive portfolio website built with Next.js 15, TailwindCSS, and S
   - Framer Motion
   - MDX
   - Lucide Icons
+  - Nodemailer (Email integration)
 
 ## Pages & Features
 
@@ -41,7 +42,7 @@ A modern, responsive portfolio website built with Next.js 15, TailwindCSS, and S
   - Code syntax highlighting
   - SEO optimization
 - 🏆 **Achievements** - Awards and volunteer work
-- 📬 **Contact** - Contact form and social links
+- 📬 **Contact** - Contact form with Nodemailer SMTP integration and social links
 
 ## Getting Started
 
@@ -54,6 +55,8 @@ git clone https://github.com/byigitt/portfolio.git
 2. Install dependencies:
 
 ```bash
+npm install --legacy-peer-deps
+# or
 pnpm install
 ```
 
@@ -62,6 +65,14 @@ pnpm install
 ```bash
 cp .env.example .env.local
 ```
+
+Configure your SMTP settings in `.env.local`:
+- `SMTP_HOST`: `smtp.gmail.com`
+- `SMTP_PORT`: `587`
+- `SMTP_USER`: `your_email@gmail.com`
+- `SMTP_PASS`: `your_google_app_password`
+- `CONTACT_EMAIL`: `your_destination_email@gmail.com`
+
 
 4. Update your information:
 

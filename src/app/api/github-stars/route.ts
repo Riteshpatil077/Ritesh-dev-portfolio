@@ -75,8 +75,7 @@ async function fetchRepos(query: { type: 'user' | 'org', name: string }) {
 
 export async function GET() {
   const queries = [
-    { type: 'user' as const, name: 'byigitt' },
-    { type: 'org' as const, name: 'eudalabs' }
+    { type: 'user' as const, name: 'Riteshpatil077' },
   ];
   
   const allRepos = await Promise.all(

@@ -6,78 +6,30 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const experience = [
   {
-    company: "Cankaya University",
-    location: "Ankara, Turkey",
-    position: "Undergraduate Teaching Assistant",
-    period: "Nov 2024 - Present",
+    company: "Ishwarya BI Technologies",
+    location: "Kolhapur, Maharashtra",
+    position: "Software Intern",
+    period: "January 2026 – July 2026",
     description: [
       {
-        id: "cankaya-1",
-        text: "Assisting in SENG271 (Software Project I), SENG272 (Software Project II), SENG384 (Software Project IV), SENG101 (Computer Programming I) and SENG102 (Computer Programming II) courses.",
+        id: "ishwarya-1",
+        text: "Developed frontend applications using React and Next.js, and built backend services using Node.js, Express.js, Python, Django, and Flask.",
       },
       {
-        id: "cankaya-2",
-        text: "Supporting students with programming concepts, reviewing assignments, and providing guidance in software development projects.",
-      },
-    ],
-  },
-  {
-    company: "Tourist: Travel the World",
-    location: "Remote",
-    position: "Web Development Intern",
-    period: "July 2024 - Nov 2024",
-    description: [
-      {
-        id: "tourist-1",
-        text: "Collaborated with the development team to design and implement new features for the company's AI-powered travel planning platform.",
+        id: "ishwarya-2",
+        text: "Developed and integrated REST APIs, and worked with PostgreSQL and MySQL databases.",
       },
       {
-        id: "tourist-2",
-        text: "Worked with web development technologies and contributed to both frontend and backend development tasks.",
+        id: "ishwarya-3",
+        text: "Contributed to an ERP system for a book-publishing business and a crusher-management system for business operations.",
       },
       {
-        id: "tourist-3",
-        text: "Implemented CI/CD pipelines, managed containerized deployments, and optimized development workflows.",
-      },
-    ],
-  },
-  {
-    company: "Google Game and Application Academy",
-    location: "Istanbul, Turkey",
-    position: "Trainee",
-    period: "Nov 2023 - July 2024",
-    description: [
-      {
-        id: "google-1",
-        text: "Participated in a rigorous training program focused on game and application development using industry-standard tools and practices.",
+        id: "ishwarya-4",
+        text: "Worked on WordPress websites and customization, assisted with deployment and production configuration.",
       },
       {
-        id: "google-2",
-        text: "Collaborated on team projects, enhancing skills in software design, coding, and project management in a professional setting.",
-      },
-      {
-        id: "google-3",
-        text: "Engaged in hands-on learning and developed proficiency in modern development environments.",
-      },
-    ],
-  },
-  {
-    company: "G.Round",
-    location: "Los Angeles, CA (Remote)",
-    position: "QA Tester",
-    period: "May 2023 - May 2024",
-    description: [
-      {
-        id: "ground-1",
-        text: "Performed comprehensive testing of pre-release games to identify bugs, performance issues, and potential improvements.",
-      },
-      {
-        id: "ground-2",
-        text: "Provided detailed feedback and reports to developers, enhancing the overall quality and user experience of gaming products.",
-      },
-      {
-        id: "ground-3",
-        text: "Developed expertise in QA methodologies, tools, and processes while working within a dynamic international team.",
+        id: "ishwarya-5",
+        text: "Contributed to AI chatbot integration, website optimization, debugging, and performance improvements.",
       },
     ],
   },

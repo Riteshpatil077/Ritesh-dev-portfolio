@@ -38,14 +38,8 @@ const routes = [
     href: "/projects",
     label: "Projects",
   },
-  {
-    href: "/blog",
-    label: "Blog",
-  },
-  {
-    href: "/achievements",
-    label: "Achievements",
-  },
+  // Blog — hidden temporarily
+  // Achievements — hidden temporarily
   {
     href: "/contact",
     label: "Contact",

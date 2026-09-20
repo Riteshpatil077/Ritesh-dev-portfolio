@@ -1,83 +1,16 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import { Users, Star, Trophy, Calendar } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
-const achievements = [
-  {
-    category: "Competition Achievements",
-    icon: <Trophy className="h-5 w-5" />,
-    items: [
-      {
-        title: "1st place @ HACKMETU Hackathon",
-        description: "Participated in the HACKMETU with our project named \"RoundCall\" and won the 1st place with a team of 2 people.",
-        year: "2024"
-      },
-      {
-        title: "1st place @ Ostim Solana Hackathon",
-        description: "Participated in the Ostim Solana Hackathon with our project named \"Soulana\" and won the 1st place with a team of 3 people.",
-        year: "2024"
-      },
-      {
-        title: "1st place @ Cankaya University 2nd Planathon",
-        description: "Participated in the Cankaya University 2nd Planathon with detailed usage of AI and won the 1st place with a team of 5 people.",
-        year: "2024"
-      },
-      {
-        title: "2nd place @ Ostim AI Competition",
-        description: "Participated in the Ostim AI Competition with our project named \"smartmove\" and won the 2nd place with a team of 2 people.",
-        year: "2024"
-      },
-      {
-        title: "2nd place @ LiftZone Hackcube Competition",
-        description: "Participated in the LiftZone Hackcube Competition with our project named \"crai\" and won the 2nd place with a team of 2 people.",
-        year: "2024"
-      },
-      {
-        title: "Outstanding Delegate Award @ MUN",
-        description: "Participated in the G-20 committee at the MUN event organized by Yusuf Kalkavan Anatolian High School and received the Outstanding Delegate Award.",
-        year: "2022"
-      },
-    ],
-  },
-  {
-    category: "Community Leadership",
-    icon: <Users className="h-5 w-5" />,
-    items: [
-      {
-        title: "GDG on Campus - Çankaya University",
-        description: "Served as a Hackathon & Software Team Member (Sept 2024 - Feb 2025). Previously served as a Shell Team Member (Dec 2022 - June 2024).",
-        year: "2022-2025"
-      },
-      {
-        title: "Community Management",
-        description: "Volunteering as a community manager on a large Discord server with over 145,000 members.",
-        year: "2022-Present"
-      },
-    ],
-  },
-  {
-    category: "Academic Achievements",
-    icon: <Star className="h-5 w-5" />,
-    items: [
-      {
-        title: "Working as Undergraduate Assistant",
-        description: "Worked with my teachers to teach/assist them in their courses.",
-        year: "2024-Present"
-      },
-      {
-        title: "Former Contributor of @bilimial",
-        description: "@bilimial is a community/page that supports and promotes science and technology in Turkey from my highschool.",
-        year: "2020-2021"
-      },
-      {
-        title: "Tubitak Science Fair 4006",
-        description: "Worked as a project demonstrator and general assistant at the TUBITAK fair.",
-        year: "2017"
-      },
-    ],
-  },
+const achievements: {
+  category: string;
+  icon: React.ReactNode;
+  items: { title: string; description: string; year: string }[];
+}[] = [
+  // Achievements will be added soon
 ];
 
 // Flatten all achievements into a single timeline
@@ -117,7 +50,7 @@ export default function AchievementsPage() {
           Achievements
         </h1>
         <p className="mt-2 text-gray-500 dark:text-gray-400 max-w-[700px]">
-          My contributions and notable accomplishments
+          Achievements and contributions coming soon
         </p>
       </motion.div>
 

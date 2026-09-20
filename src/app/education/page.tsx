@@ -6,20 +6,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const education = [
   {
-    school: "Cankaya University",
-    location: "Ankara, Turkey",
-    degree: "Bachelor of Engineering in Software",
-    period: "Oct. 2022 - June 2026 (Expected)",
-    gpa: "GPA: 3.19",
-    description: "Focused on software development and computer science fundamentals.",
-  },
-  {
-    school: "Icel Anatolian Highschool",
-    location: "Mersin, Turkey",
-    degree: "High School Diploma",
-    period: "Sep. 2017 - June 2021",
-    gpa: "GPA: 3.74 (92.6/100.0)",
-    description: "Graduated with honors.",
+    school: "Tatyasaheb Kore Institute of Engineering and Technology",
+    location: "Warananagar, Maharashtra, India",
+    degree: "B.Tech — Computer Science & Engineering",
+    period: "2022 – 2026",
+    gpa: "CGPA: Not added yet",
+    description: "Focused on computer science fundamentals, software engineering, and full-stack development.",
   },
 ];
 

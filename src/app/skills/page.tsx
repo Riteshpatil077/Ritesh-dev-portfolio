@@ -8,22 +8,32 @@ const skills = {
   programmingLanguages: {
     icon: <Code2 className="h-5 w-5" />,
     title: "Programming Languages",
-    items: ["TypeScript", "JavaScript", "Java", "Python", "PHP", "C", "Go", "SQL", "C#", "Julia"],
+    items: ["Python", "JavaScript", "TypeScript", "Java", "C++", "C", "Swift", "SQL"],
   },
-  technologies: {
+  frontend: {
+    icon: <Globe className="h-5 w-5" />,
+    title: "Frontend",
+    items: ["React", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Vite"],
+  },
+  backend: {
     icon: <Terminal className="h-5 w-5" />,
-    title: "Technologies",
-    items: ["Next.js", "Node.js", "React.js", "Express", "EJS", "MongoDB", "MySQL", "Git", "Postman", "Redis"],
+    title: "Backend",
+    items: ["Node.js", "Express.js", "Django", "Flask", "FastAPI", "REST APIs"],
+  },
+  databases: {
+    icon: <Laptop className="h-5 w-5" />,
+    title: "Databases",
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM", "SQLAlchemy", "Redis"],
+  },
+  aiData: {
+    icon: <Code2 className="h-5 w-5" />,
+    title: "AI / Data",
+    items: ["NumPy", "Pandas", "Power BI", "Data Visualization", "AI Chatbot Integration"],
   },
   tools: {
-    icon: <Laptop className="h-5 w-5" />,
-    title: "Tools",
-    items: ["Cursor", "Ollama", "Visual Studio Code", "Adobe Photoshop", "Figma", "Adobe Premiere", "Vegas Pro"],
-  },
-  languages: {
-    icon: <Globe className="h-5 w-5" />,
-    title: "Languages",
-    items: ["Turkish (Native)", "English (Fluent)", "German (Beginner)"],
+    icon: <Terminal className="h-5 w-5" />,
+    title: "Tools & Deployment",
+    items: ["Git", "GitHub", "Docker", "Postman", "VS Code", "Vercel", "Render", "Neon", "WordPress"],
   },
 };
 

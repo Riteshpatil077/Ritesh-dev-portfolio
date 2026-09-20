@@ -11,40 +11,40 @@ const inter = Inter({
   preload: true,
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://bayburt.lu'
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://riteshpatil.dev'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Barış Bayburtlu | Full Stack Developer',
-    template: 'Barış Bayburtlu | %s'
+    default: 'Ritesh Ramesh Patil | Full-Stack Developer',
+    template: 'Ritesh Ramesh Patil | %s'
   },
-  description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies. Exploring the intersection of design and development.',
-  keywords: ['Full Stack Developer', 'React', 'Next.js', 'TypeScript', 'Web Development', 'Software Engineer'],
-  authors: [{ name: 'Barış Bayburtlu' }],
-  creator: 'Barış Bayburtlu',
+  description: 'Full-Stack Developer focused on building practical, scalable web applications using React, Next.js, Node.js, Express.js, Python, Flask, Django, PostgreSQL, and modern development tools.',
+  keywords: ['Full-Stack Developer', 'React', 'Next.js', 'Node.js', 'Express.js', 'Python', 'Django', 'Flask', 'PostgreSQL', 'TypeScript', 'Web Development', 'Software Engineer'],
+  authors: [{ name: 'Ritesh Ramesh Patil' }],
+  creator: 'Ritesh Ramesh Patil',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://bayburt.lu',
-    siteName: 'Barış Bayburtlu - Portfolio',
-    title: 'Barış Bayburtlu | Full Stack Developer',
-    description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies.',
+    url: 'https://riteshpatil.dev',
+    siteName: 'Ritesh Ramesh Patil - Portfolio',
+    title: 'Ritesh Ramesh Patil | Full-Stack Developer',
+    description: 'Full-Stack Developer focused on building practical, scalable web applications.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Barış Bayburtlu - Full Stack Developer'
+        alt: 'Ritesh Ramesh Patil - Full-Stack Developer'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Barış Bayburtlu | Full Stack Developer',
-    description: 'Full Stack Developer specializing in React, Next.js, and modern web technologies.',
+    title: 'Ritesh Ramesh Patil | Full-Stack Developer',
+    description: 'Full-Stack Developer focused on building practical, scalable web applications.',
     images: ['/og-image.jpg'],
-    creator: '@bariscmb'
+    creator: '@Riteshpatil077'
   },
   robots: {
     index: true,

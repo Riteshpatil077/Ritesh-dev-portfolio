@@ -11,175 +11,89 @@ export interface Project {
 }
 
 export const projects: Project[] = [
-  // Web Applications
   {
-    title: "Suncore",
-    description: "An open-source offline web-based audio processor with features like nightcore effect, reverb, and bass boost.",
-    github: "https://github.com/byigitt/suncore",
-    tags: ["Next.js", "TypeScript", "Audio Processing", "Web Audio API"],
+    title: "SecureChatApp",
+    description: "A secure real-time chat application with end-to-end encryption, AES-256-GCM, ECDSA digital signatures, RSA-OAEP key exchange, TOTP + OTP authentication, Socket.IO, encrypted media, self-destructing conversations, Groq AI assistant, and PWA support.",
+    github: "https://github.com/Riteshpatil077/SecureChatApp",
+    link: "https://securechatapp.vercel.app",
+    tags: ["React", "Vite", "Node.js", "Express.js", "Socket.IO", "MySQL", "Web Crypto API", "AES-256-GCM", "JWT", "Groq AI", "PWA"],
     repo: {
-      owner: "byigitt",
-      name: "suncore"
-    },
-    link: "https://suncore.vercel.app"
-  },
-  {
-    title: "Flashy",
-    description: "Modern offline flashcard application for students to use.",
-    github: "https://github.com/byigitt/flashy",
-    tags: ["Next.js", "TypeScript", "Offline", "Study", "Flashcards"],
-    repo: {
-      owner: "byigitt",
-      name: "flashy"
-    },
-    link: "https://flashy-byigitt.vercel.app"
-  },
-  {
-    title: "OneTimeLink",
-    description: "One-time-link generator for uploading files.",
-    github: "https://github.com/byigitt/onetimelink",
-    tags: ["Next.js", "TypeScript", "File Upload", "One-Time Links"],
-    repo: {
-      owner: "byigitt",
-      name: "onetimelink"
+      owner: "Riteshpatil077",
+      name: "SecureChatApp"
     }
   },
   {
-    title: "URL Shortener",
-    description: "A simple but effective URL shortener service built with JavaScript.",
-    github: "https://github.com/byigitt/shrtn",
-    tags: ["JavaScript", "URL Shortening", "Web App"],
+    title: "Pressly",
+    description: "A modern full-stack e-commerce platform for digital magazine subscriptions, featuring interactive PDF flipbook reading, JWT authentication, OTP-based password recovery, role-based access, shopping cart, subscription management, and admin dashboard.",
+    github: "https://github.com/Riteshpatil077/Pressly",
+    tags: ["Next.js 15", "React", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "JWT", "bcrypt", "NodeMailer", "React-PDF"],
     repo: {
-      owner: "byigitt",
-      name: "shrtn"
+      owner: "Riteshpatil077",
+      name: "Pressly"
     }
   },
   {
-    title: "React Note",
-    description: "Compact note-taking application optimized for mobile use.",
-    github: "https://github.com/byigitt/react-note",
-    tags: ["React", "JavaScript", "Mobile-First", "Notes"],
+    title: "Advanced Analytics & Enterprise Admin Dashboard",
+    description: "A full-stack enterprise ERP and analytics dashboard centralizing sales, subscriptions, invoicing, financial workflows, packaging, logistics, and user management with 40+ PostgreSQL tables and Chart.js analytics.",
+    github: "https://github.com/Riteshpatil077/admin-dashboard",
+    link: "https://admin-dashboard.vercel.app",
+    tags: ["Next.js", "React", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "Chart.js", "Axios", "Lucide"],
     repo: {
-      owner: "byigitt",
-      name: "react-note"
-    }
-  },
-
-  // API & Backend
-  {
-    title: "SAPI - Simple Spotify API",
-    description: "A simplified implementation of the Spotify API for easier integration.",
-    github: "https://github.com/byigitt/sapi",
-    tags: ["JavaScript", "Spotify API", "API", "Node.js"],
-    repo: {
-      owner: "byigitt",
-      name: "sapi"
+      owner: "Riteshpatil077",
+      name: "admin-dashboard"
     }
   },
   {
-    title: "DDGS - DuckDuckGo Search",
-    description: "A TypeScript package that allows you to search the web using DuckDuckGo's API.",
-    github: "https://github.com/eudalabs/ddgs",
-    tags: ["TypeScript", "Node.js", "Search", "API"],
+    title: "Expense Tracker",
+    description: "A full-stack financial management platform for tracking expenses, income, and categories with interactive charts, JWT auth, PDF/Excel reports, email delivery, background task processing with Celery + Redis, and Dockerized deployment.",
+    github: "https://github.com/Riteshpatil077/expense-tracker",
+    tags: ["React", "Vite", "Tailwind CSS", "Recharts", "Django", "Django REST Framework", "PostgreSQL", "Celery", "Redis", "Docker"],
     repo: {
-      owner: "eudalabs",
-      name: "ddgs"
-    }
-  },
-
-  // Automation Tools
-  {
-    title: "Discord URL Spammer",
-    description: "A tool for Discord vanity URL management with features for automated URL acquisition and monitoring.",
-    github: "https://github.com/byigitt/url",
-    tags: ["JavaScript", "Discord API", "Automation"],
-    repo: {
-      owner: "byigitt",
-      name: "url"
+      owner: "Riteshpatil077",
+      name: "expense-tracker"
     }
   },
   {
-    title: "Spotify Daily Playlist",
-    description: "Automatically creates daily playlists on Spotify based on your most listened tracks.",
-    github: "https://github.com/byigitt/spotify-daily-playlist",
-    tags: ["JavaScript", "Spotify API", "Automation", "Node.js"],
+    title: "श्री कृष्णा ज्वेलर्स",
+    description: "A full-stack bilingual (Marathi + English) jewellery shop management system covering inventory, sales, purchases, gold exchange calculations, purity/fine-weight, customer profiles, loans, EMI tracking, profit analysis, WhatsApp/email sharing, and printable receipts.",
+    github: "https://github.com/Riteshpatil077/jewellery-shop",
+    link: "https://jewellery-shop.vercel.app",
+    tags: ["React", "Tailwind CSS", "Node.js", "Express.js", "PostgreSQL", "Prisma", "REST APIs"],
     repo: {
-      owner: "byigitt",
-      name: "spotify-daily-playlist"
+      owner: "Riteshpatil077",
+      name: "jewellery-shop"
     }
   },
   {
-    title: "Visa Checker",
-    description: "Automated Schengen visa appointment tracker with Telegram notifications.",
-    github: "https://github.com/byigitt/visa-checker",
-    tags: ["TypeScript", "Automation", "Telegram", "Notifications"],
+    title: "Atmosphere",
+    description: "A modern live weather forecast dashboard with global location search, geolocation, Celsius/Fahrenheit toggle, 24-hour & 5-day forecasts, atmospheric metrics, dynamic themes, and a responsive glassmorphism interface.",
+    github: "https://github.com/Riteshpatil077/atmosphere",
+    tags: ["HTML5", "CSS3", "JavaScript ES6+", "Open-Meteo API", "OpenWeatherMap API", "OpenStreetMap Nominatim"],
     repo: {
-      owner: "byigitt",
-      name: "visa-checker"
-    }
-  },
-
-  // Development Tools
-  {
-    title: "Web Scraper",
-    description: "A Python web scraper for supplementler.com to extract and process product information efficiently.",
-    github: "https://github.com/byigitt/web-scraper-test",
-    tags: ["Python", "BeautifulSoup", "Selenium", "Web Scraping"],
-    repo: {
-      owner: "byigitt",
-      name: "web-scraper-test"
+      owner: "Riteshpatil077",
+      name: "atmosphere"
     }
   },
   {
-    title: "Transcriptor",
-    description: "A Python-based tool using Whisper AI to automatically transcribe audio from YouTube videos.",
-    github: "https://github.com/byigitt/transcriptor",
-    tags: ["Python", "Whisper AI", "YouTube", "Google Colab"],
+    title: "URL Shortener & Analytics Microservice",
+    description: "A production-grade full-stack URL shortening service with collision-resistant short codes, click analytics, IP tracking, URL history pagination, RESTful APIs, Flask Application Factory architecture, and Gunicorn production server.",
+    github: "https://github.com/Riteshpatil077/url-shortener",
+    link: "https://url-shortener.vercel.app",
+    tags: ["Python", "Flask", "SQLAlchemy", "PostgreSQL", "SQLite", "Gunicorn", "Jinja2", "HTML5", "CSS3"],
     repo: {
-      owner: "byigitt",
-      name: "transcriptor"
+      owner: "Riteshpatil077",
+      name: "url-shortener"
     }
   },
   {
-    title: "Ollama Chat",
-    description: "Chat with your local LLM model using Ollama API inside your terminal.",
-    github: "https://github.com/byigitt/ollama-chat",
-    tags: ["JavaScript", "CLI", "LLM", "AI"],
+    title: "Banco ERP Solution",
+    description: "An enterprise-grade full-stack ERP application managing sales, subscriptions, inventory, master data, and accounting with printable invoices/ledgers/stickers, PDF generation, Excel export, automated DB backups, and JWT authentication.",
+    github: "https://github.com/Riteshpatil077/banco-erp",
+    tags: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "JWT", "Chart.js", "jsPDF", "ExcelJS"],
     repo: {
-      owner: "byigitt",
-      name: "ollama-chat"
+      owner: "Riteshpatil077",
+      name: "banco-erp"
     }
   },
-
-  // CLI & Utilities
-  {
-    title: "AIC - AI Commit Messages",
-    description: "A CLI tool that generates commit messages using AI, streamlining the git workflow for developers.",
-    github: "https://github.com/eudalabs/aic",
-    tags: ["TypeScript", "AI", "CLI", "Git"],
-    repo: {
-      owner: "eudalabs",
-      name: "aic"
-    }
-  },
-  {
-    title: "Wordle Finder",
-    description: "A tool designed to find the best words for the popular Wordle game.",
-    github: "https://github.com/byigitt/wordle-finder",
-    tags: ["JavaScript", "Algorithm", "Game Helper", "CLI"],
-    repo: {
-      owner: "byigitt",
-      name: "wordle-finder"
-    }
-  },
-  {
-    title: "Parolla Finder",
-    description: "Word finder tool for the Parolla game.",
-    github: "https://github.com/byigitt/parolla-finder",
-    tags: ["JavaScript", "CLI", "Word Games", "Helper"],
-    repo: {
-      owner: "byigitt",
-      name: "parolla-finder"
-    }
-  }
-]; 
+];
+
