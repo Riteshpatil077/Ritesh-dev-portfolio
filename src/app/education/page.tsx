@@ -10,7 +10,7 @@ const education = [
     location: "Warananagar, Maharashtra, India",
     degree: "B.Tech — Computer Science & Engineering",
     period: "2022 – 2026",
-    gpa: "CGPA: Not added yet",
+    gpa: "CGPA: 7.66",
     description: "Focused on computer science fundamentals, software engineering, and full-stack development.",
   },
 ];
